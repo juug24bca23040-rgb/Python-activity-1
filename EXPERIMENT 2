@@ -1,0 +1,61 @@
+Program to Implement Control Flow Statements and Looping Statements in Python
+Algorithm
+
+1. Start the program.
+2. Ask the user to enter a number.
+3. Read the number and store it in a variable.
+4. Check the value of the number using a control flow statement.
+5. If the number is greater than zero, display that the number is positive.
+6. If the number is less than zero, display that the number is negative.
+7. Otherwise, display that the number is zero.
+8. Use a **for loop** to print numbers from 1 to 5.
+9. Initialize a variable with value 5.
+10. Use a **while loop** to print numbers from 5 down to 1.
+11. Decrease the value of the variable by 1 after each iteration.
+12. Repeat the loop until the value becomes less than 1.
+13. Stop the program.
+
+CODE 
+
+# Control Flow and Looping Statements in Python
+
+# Control Flow Statement (if-elif-else)
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("The number is Positive")
+elif num < 0:
+    print("The number is Negative")
+else:
+    print("The number is Zero")
+
+# For Loop
+print("\nNumbers from 1 to 5 using for loop:")
+for i in range(1, 6):
+    print(i)
+
+# While Loop
+print("\nNumbers from 5 to 1 using while loop:")
+i = 5
+while i >= 1:
+    print(i)
+    i -= 1
+
+OUTPUT
+
+Enter a number: 5
+The number is Positive
+
+Numbers from 1 to 5 using for loop:
+1
+2
+3
+4
+5
+
+Numbers from 5 to 1 using while loop:
+5
+4
+3
+2
+1
