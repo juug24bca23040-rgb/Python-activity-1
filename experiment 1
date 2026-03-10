@@ -1,0 +1,155 @@
+Demonstration of Various Data Types and Operators in Python
+
+ALGORITHM 
+
+1. Start the program.
+2. Declare an integer variable `a` and assign value `10`.
+3. Declare a float variable `b` and assign value `5.5`.
+4. Declare a string variable `c` and assign value `"Python"`.
+5. Declare a boolean variable `d` and assign value `True`.
+6. Declare a list variable `e` containing elements `[1, 2, 3]`.
+7. Declare a tuple variable `f` containing elements `(4, 5, 6)`.
+8. Declare a dictionary variable `g` with keys `"name"` and `"age"`.
+9. Display all variables along with their respective data types using the `type()` function.
+10. Declare two integer variables `x` and `y` with values `12` and `4`.
+11. Perform **arithmetic operations** such as addition, subtraction, multiplication, and division using `x` and `y`.
+12. Display the results of all arithmetic operations.
+13. Perform **comparison operations** such as greater than (`>`), and equal to (`==`) between `x` and `y`.
+14. Display the results of the comparison operations.
+15. Declare two boolean variables `p = True` and `q = False`.
+16. Perform **logical operations** such as `and` and `or` using `p` and `q`.
+17. Display the results of the logical operations.
+18. Check **membership operator** by verifying whether element `2` exists in list `e`.
+19. Display the result of the membership test.
+20. Declare two lists `list1` and `list2` and assign `list2 = list1`.
+21. Perform **identity operator** `is` to check whether both lists refer to the same object.
+22. Display the result of the identity operation.
+23. Stop the program.
+
+
+CODE
+
+
+# Data Types
+
+integer_var = 25
+float_var = 10.75
+string_var = "Python Programming"
+boolean_var = True
+list_var = [10, 20, 30, 40]
+tuple_var = (1, 2, 3)
+dict_var = {"name": "John", "age": 21}
+set_var = {5, 10, 15}
+
+print("----- DATA TYPES -----")
+print("Integer:", integer_var, type(integer_var))
+print("Float:", float_var, type(float_var))
+print("String:", string_var, type(string_var))
+print("Boolean:", boolean_var, type(boolean_var))
+print("List:", list_var, type(list_var))
+print("Tuple:", tuple_var, type(tuple_var))
+print("Dictionary:", dict_var, type(dict_var))
+print("Set:", set_var, type(set_var))
+
+# -----------------------------
+# Operators
+# -----------------------------
+
+a = 12
+b = 5
+
+print("\n----- ARITHMETIC OPERATORS -----")
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Floor Division:", a // b)
+print("Modulus:", a % b)
+print("Exponent:", a ** b)
+
+print("\n----- COMPARISON OPERATORS -----")
+print("a > b:", a > b)
+print("a < b:", a < b)
+print("a == b:", a == b)
+print("a != b:", a != b)
+print("a >= b:", a >= b)
+print("a <= b:", a <= b)
+
+print("\n----- LOGICAL OPERATORS -----")
+x = True
+y = False
+print("x and y:", x and y)
+print("x or y:", x or y)
+print("not x:", not x)
+
+print("\n----- ASSIGNMENT OPERATORS -----")
+c = 10
+c += 5
+print("c += 5:", c)
+
+c -= 3
+print("c -= 3:", c)
+
+c *= 2
+print("c *= 2:", c)
+
+print("\n----- MEMBERSHIP OPERATORS -----")
+print("20 in list_var:", 20 in list_var)
+print("50 not in list_var:", 50 not in list_var)
+
+print("\n----- IDENTITY OPERATORS -----")
+list1 = [1,2,3]
+list2 = [1,2,3]
+list3 = list1
+
+print("list1 is list2:", list1 is list2)
+print("list1 is list3:", list1 is list3)
+print("list1 is not list2:", list1 is not list2)
+
+OUTPUT
+
+----- DATA TYPES -----
+Integer: 25 <class 'int'>
+Float: 10.75 <class 'float'>
+String: Python Programming <class 'str'>
+Boolean: True <class 'bool'>
+List: [10, 20, 30, 40] <class 'list'>
+Tuple: (1, 2, 3) <class 'tuple'>
+Dictionary: {'name': 'John', 'age': 21} <class 'dict'>
+Set: {10, 5, 15} <class 'set'>
+
+----- ARITHMETIC OPERATORS -----
+Addition: 17
+Subtraction: 7
+Multiplication: 60
+Division: 2.4
+Floor Division: 2
+Modulus: 2
+Exponent: 248832
+
+----- COMPARISON OPERATORS -----
+a > b: True
+a < b: False
+a == b: False
+a != b: True
+a >= b: True
+a <= b: False
+
+----- LOGICAL OPERATORS -----
+x and y: False
+x or y: True
+not x: False
+
+----- ASSIGNMENT OPERATORS -----
+c += 5: 15
+c -= 3: 12
+c *= 2: 24
+
+----- MEMBERSHIP OPERATORS -----
+20 in list_var: True
+50 not in list_var: True
+
+----- IDENTITY OPERATORS -----
+list1 is list2: False
+list1 is list3: True
+list1 is not list2: True
