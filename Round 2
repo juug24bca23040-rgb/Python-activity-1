@@ -1,0 +1,143 @@
+Case Study Title: Create dictionary of product and prices,Apply 10% discount using dictionary comprehension,Remove products priced below 100,Display updated product list
+
+USN: 24BCAR0520
+24BCAR0501
+24BCAR0497
+
+Name:Tanya Baid
+Shivani Ram Suryawanshi
+Sehreen 
+
+Algorithm: 1
+Start the program 
+Create an empty dictionary called products
+Ask the user to enter the number of products
+Repeat the following steps for each product 
+Enter the product name 
+Enter the price of the product
+Add the product and price to the dictionary
+Display the dictionary of products and prices
+Stop.
+
+
+Code:1
+products = {}
+
+n = int(input("Enter number of products: "))
+
+for i in range(n):
+    name = input("Enter product name: ")
+    price = float(input("Enter price: "))
+    products[name] = price
+
+print("Product Dictionary:")
+print(products)
+
+
+
+Output:1
+Enter number of products: 3
+Enter product name: Apple
+Enter price: 50
+Enter product name: Milk
+Enter price: 30
+Enter product name: Bread
+Enter price: 40
+
+Product Dictionary:
+{'Apple': 50.0, 'Milk': 30.0, 'Bread': 40.0}
+
+
+
+Algorithm 2:
+Start
+Create a dictionary products with product names and their prices
+Use dictionary comprehension to create a new dictionary dis_products
+In the new dictionary,reduce each price by 10% using the formula: new_price = price -(price * 10/100)
+Store the updated prices dis_products
+Display the original dictionary
+Display the dictionary with discounted prices 
+Stop
+
+
+Code 2:
+products = {
+        "Apple":100,
+        "Milk":60,
+        "Bread":40
+        "Eggs":80
+}
+dis_products = {key:value * 0.9 for key,value in products.item()}
+print("Original Prices:",products)
+print("Prices after 10% discount:",dis_products)
+
+Output 2:
+Original Prices: {'Apple': 100, 'Milk': 60, 'Bread': 40, 'Eggs': 80}
+Prices after 10% Discount: {'Apple': 90.0, 'Milk': 54.0, 'Bread': 36.0, 'Eggs': 72.0}
+
+
+
+
+Algorithm 3:
+Start 
+Create a dictionary products containing product names and prices
+Use dictionary comprehension to create a new dictionary 
+check each product price in the  dictionary 
+Keep only those product whose price is greater than or equal to 100
+Store this product in a new  dictionary filtered_products
+Display the new dictionary filtered_products
+Stop
+
+
+
+
+Code 3:
+products = {
+    "Apple": 120,
+    "Milk": 60,
+    "Bread": 40,
+    "Shoes": 500,
+    "Bag": 250
+}
+
+filtered_products = {key: value for key, value in products.items() if value >= 100}
+
+print("Products priced 100 or more:")
+print(filtered_products)
+
+Output 3:
+Products priced 100 or more:
+{'Apple': 120, 'Shoes': 500, 'Bag': 250}
+
+
+
+Algorithm 4:
+Start 
+Create a dictionary products with product names and prices
+Remove products priced below 100 using dictionary comprehension
+Store the remaining products in updated_products
+Display the updated product list
+Stop
+
+
+Code 4:
+products = {
+    "Apple": 120,
+    "Milk": 60,
+    "Bread": 40,
+    "Shoes": 500,
+    "Bag": 250
+}
+
+updated_products = {k: v for k, v in products.items() if v >= 100}
+
+print("Updated Product List:")
+for product, price in updated_products.items():
+    print(product, ":", price)
+    
+    
+Output 4:
+Updated Product List
+Apple : 120
+Shoes : 500
+Bag : 250
